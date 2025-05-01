@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive JS Playground</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>JavaScript Event Playground</h1>
+    </header>
+
+    <main>
+        <!-- Event Handling Section -->
+        <section class="event-section">
+            <h2>Event Handling 🎈</h2>
+            
+            <div class="event-box">
+                <button id="clickButton" class="interactive-btn">Click Me!</button>
+                <p id="clickCounter">Clicked 0 times</p>
+            </div>
+            
+            <div class="event-box hover-box" id="hoverBox">
+                <p>Hover over me!</p>
+                <div class="hover-effect"></div>
+            </div>
+            
+            <div class="event-box">
+                <p>Press any key:</p>
+                <div id="keypressDisplay">Waiting for keypress...</div>
+            </div>
+            
+            <div class="event-box secret-box" id="secretBox">
+                <p>Double-click me for a secret!</p>
+            </div>
+        </section>
+
+        <!-- Interactive Elements Section -->
+        <section class="interactive-section">
+            <h2>Interactive Elements 🎮</h2>
+            
+            <div class="color-changer">
+                <button id="colorButton">Change My Color</button>
+            </div>
+            
+            <div class="gallery">
+                <h3>Image Gallery</h3>
+                <div class="gallery-container">
+                    <img src="https://picsum.photos/id/237/300/200" alt="Gallery image 1" class="active">
+                    <img src="https://picsum.photos/id/238/300/200" alt="Gallery image 2">
+                    <img src="https://picsum.photos/id/239/300/200" alt="Gallery image 3">
+                </div>
+                <div class="gallery-controls">
+                    <button id="prevBtn">Previous</button>
+                    <button id="nextBtn">Next</button>
+                </div>
+            </div>
+            
+            <div class="accordion">
+                <h3>FAQ Accordion</h3>
+                <div class="accordion-item">
+                    <button class="accordion-btn">What is JavaScript?</button>
+                    <div class="accordion-content">
+                        <p>JavaScript is a programming language that allows you to implement complex features on web pages.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-btn">What are events in JavaScript?</button>
+                    <div class="accordion-content">
+                        <p>Events are actions or occurrences that happen in the system you're programming, which the system tells you about so you can respond to them in some way.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-btn">What is event handling?</button>
+                    <div class="accordion-content">
+                        <p>Event handling is the process of writing code that runs when a specific event occurs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form Validation Section -->
+        <section class="form-section">
+            <h2>Form Validation 📋</h2>
+            <form id="validationForm">
+                <div class="form-group">
+                    <label for="username">Username (required):</label>
+                    <input type="text" id="username" required>
+                    <div class="error-message" id="usernameError"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email">
+                    <div class="error-message" id="emailError"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password (min 8 chars):</label>
+                    <input type="password" id="password">
+                    <div class="error-message" id="passwordError"></div>
+                    <button type="button" id="togglePassword">👁️ Show Password</button>
+                </div>
+                
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>JavaScript Event Assignment</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
